@@ -11,7 +11,7 @@ const tarefas = [
   {
     titulo: 'Pegar a Kaguya',
     descricao: 'Conseguir a kaguya antes do evento acabar',
-    prioridade: 'URGENTE',
+    prioridade: 'urgente',
     status: 'pendente'
   },
   {
