@@ -1,29 +1,12 @@
+import { useSelector } from 'react-redux'
+
 import Tarefa from '../../components/Tarefa'
 import { Container } from './styles'
-import * as enums from '../../utils/enums/tarefa'
-
-const tarefas = [
-  {
-    titulo: 'Estudar TS',
-    descricao: 'Ver a aula 3 da EBAC',
-    prioridade: enums.Prioridade.IMPORTANTE,
-    status: enums.Status.CONCLUIDA
-  },
-  {
-    titulo: 'Pegar a Kaguya',
-    descricao: 'Conseguir a kaguya antes do evento acabar',
-    prioridade: enums.Prioridade.URGENTE,
-    status: enums.Status.PENDENTE
-  },
-  {
-    titulo: 'Falhar em tentar pegar monarca',
-    descricao: 'Não conseguir pegar monarca hoje de novo',
-    prioridade: enums.Prioridade.NORMAL,
-    status: enums.Status.CONCLUIDA
-  }
-]
+import { RootReducer } from '../../store'
 
 const ListaDeTarefas = () => {
+  const { tarefas } = useSelector((state: RootReducer) => state)
+
   return (
     <Container>
       <p>
