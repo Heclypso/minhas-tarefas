@@ -68,16 +68,12 @@ export const Botao = styled.button`
   color: #fff;
   font-size: 12px;
   font-weight: bold;
-  padding: 6px 12px;
+  padding: 8px 12px;
   border: none;
   cursor: pointer;
   background-color: #2f3640;
   border-radius: 8px;
   margin-right: 8px;
-`
-
-export const BotaoSalvar = styled(Botao)`
-  background-color: ${variaveis.verde};
 `
 
 export const BotaoCancelarRemover = styled(Botao)`
